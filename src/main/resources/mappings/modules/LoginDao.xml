@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xnct.powermt.modules.maintenance.dao.LoginDao">
+
+    <select id="queryLogin" parameterType="java.util.HashMap" resultType="com.xnct.powermt.modules.maintenance.entity.LoginInfo">
+        <!-- 如何告诉MyBatis把结果映射到Appointment同时映射book属性 -->
+        select account, psw, name, dept from user where account = #{account} AND psw = #{psw}
+    </select>
+</mapper>

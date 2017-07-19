@@ -1,0 +1,29 @@
+body{
+
+}
+
+.image{
+    margin: 20px 0px;
+}
+
+.title{
+    height: 80px;
+    line-height: 80px;
+}
+
+.col-border{
+    border: solid 1px snow;
+    background-color: #d5d5d5;
+    margin-top: 100px;
+}
+
+.login-btn{
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-navbar{
+    min-height: 20px;
+    height: 25px;
+    font-size: 15px;
+}
