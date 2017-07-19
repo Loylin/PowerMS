@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="PowerMS:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="PowerMS.war">
-      <element id="artifact" artifact-name="PowerMS:war exploded" />
-    </root>
-  </artifact>
-</component>
