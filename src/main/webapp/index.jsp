@@ -18,18 +18,27 @@
     <script src="js/modules/maintenance/loglin.js"></script>
 </head>
 <body>
-<div class="container">
 
+<!--首部-->
+<div class="header">
     <!-- 首部图片与title -->
-    <img src="static/image/logo.jpg" class="col-md-3 img-rounded img-responsive image">
-    <div class="col-md-9">
-        <h3 class="bg-success text-center title">湘能楚天电力维护系统</h3>
+    <div class="col-md-3 image bg-success">
+        <img src="static/image/logo.jpg" class="img-responsive">
     </div>
 
+    <div class="col-md-9 bg-success title">
+        <h3 class="text-title text-center bg-success">湘能楚天电力维护系统</h3>
+    </div>
+</div>
+
+<!-- 主内容区 -->
+<div class="container">
     <!-- 登录表单 -->
-    <div class="col-md-4 col-border col-md-offset-1">
+    <div class="col-md-4 col-border col-md-offset-4">
         <form action="#" id="login-form">
-            <h4 class="text-center">用户登录</h4>
+            <div class="bg-info">
+                <h4 class="text-center login-title">用户登录</h4>
+            </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="account" name="account" placeholder="用户名">
             </div>
@@ -38,6 +47,7 @@
             </div>
             <p class="text-danger" id="errortips">账户或密码错误！请重新输入</p>
             <button type="submit" class="btn btn-info login-btn" id="btn-login">确定</button>
+            <address><a href="#" class="forgetpsw"><p class="text-right">忘记密码</p></a></address>
         </form>
     </div>
 
