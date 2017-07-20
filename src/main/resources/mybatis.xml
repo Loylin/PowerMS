@@ -8,4 +8,8 @@
         <!-- 使用列别名替换列名 默认:true -->
         <setting name="useColumnLabel" value="true" />
     </settings>
+    <!--别名-->
+    <typeAliases>
+        <typeAlias type="com.xnct.powermt.modules.maintenance.entity.LoginInfo" alias="LoginInfo"></typeAlias>
+    </typeAliases>
 </configuration>
