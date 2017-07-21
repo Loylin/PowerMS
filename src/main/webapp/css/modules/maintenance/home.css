@@ -1,5 +1,5 @@
 body{
-
+    padding: 0 0;
 }
 
 .img-a{
@@ -8,4 +8,27 @@ body{
 
 .img-logo{
     height: 50px;
+}
+
+.photo{
+    margin-right: 20px;
+}
+
+.photo a img{
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.left-nav{
+    width: 15%;
+    border-right: solid 1px darkgray;
+    margin-top: -20px;
+}
+
+.service-list{
+    margin: 0 0;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: solid 1px darkgray;
 }

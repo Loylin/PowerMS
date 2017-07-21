@@ -19,14 +19,43 @@
 </head>
 <body>
 
-<%--顶部导航条--%>
-<nav class="navbar navbar-default navbar-fixed-top">
+<!--顶部导航条-->
+<nav class="navbar navbar-default">
     <div class="container-fluid">
-        <%--品牌图标--%>
+        <!--品牌图标 -->
         <div class="navbar-header">
-            <a href="#" class="navbar-brand img-a"><img class="img-thumbnail img-logo" src="../static/image/logo.jpg" alt="Brand"></a>
+            <a href="#" class="navbar-brand img-a"><img class="img-rounded img-responsive img-logo" src="../static/image/logo.jpg" alt="Brand"></a>
         </div>
+
+        <!--登录信息-->
+        <div class="navbar-right photo">
+            <a href="#"><img src="../static/image/userimg.jpg" class="img-responsive"></a>
+        </div>
+
+        <!--表单-->
+        <form class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="请输入业务名称">
+            </div>
+            <button class="btn btn-primary">搜索</button>
+        </form>
     </div>
 </nav>
+
+<!--左侧的导航栏-->
+<div class="left-nav">
+    <!--列表-->
+    <h4 class="text-center service-list">业务列表</h4>
+    <!--导航-->
+    <ul class="nav nav-pills nav-stacked" id="nav-list">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">设备管理</a></li>
+        <li><a href="#">设备巡视</a></li>
+        <li><a href="#">检修管理</a></li>
+        <li><a href="#">双票管理</a></li>
+        <li><a href="#">缺陷管理</a></li>
+        <li><a href="#">运行记录</a></li>
+    </ul>
+</div>
 </body>
 </html>
