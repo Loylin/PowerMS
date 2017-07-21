@@ -20,30 +20,43 @@
 <body>
 
 <!--顶部导航条-->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <!--品牌图标 -->
         <div class="navbar-header">
-            <a href="#" class="navbar-brand img-a"><img class="img-rounded img-responsive img-logo" src="../static/image/logo.jpg" alt="Brand"></a>
+            <a href="#" class="navbar-brand img-a"><img class="img-rounded img-responsive img-logo"
+                                                        src="../static/image/logo.jpg" alt="Brand"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbar-list">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
-
-        <!--登录信息-->
-        <div class="navbar-right photo">
-            <a href="#"><img src="../static/image/userimg.jpg" class="img-responsive"></a>
-        </div>
-
-        <!--表单-->
-        <form class="navbar-form navbar-right">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="请输入业务名称">
+        <div class="collapse navbar-collapse" id="navbar-list">
+            <ul class="nav navbar-nav plate">
+                <li class="active"><a href="#">业务平台 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">运维平台</a></li>
+                <li><a href="#">授权平台</a></li>
+            </ul>
+            <!--登录信息-->
+            <div class="photo navbar-right">
+                <a href="#"><img src="../static/image/userimg.jpg" class="img-responsive"></a>
             </div>
-            <button class="btn btn-primary">搜索</button>
-        </form>
+            <!--表单-->
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control search-input" placeholder="请输入业务名称">
+                </div>
+                <button class="btn btn-primary">搜索</button>
+            </form>
+        </div>
     </div>
 </nav>
 
 <!--左侧的导航栏-->
-<div class="left-nav">
+<div class="left-nav col-md-2">
     <!--列表-->
     <h4 class="text-center service-list">业务列表</h4>
     <!--导航-->

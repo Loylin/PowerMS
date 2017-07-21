@@ -20,8 +20,15 @@ body{
     overflow: hidden;
 }
 
+.plate{
+    margin-left: 30px;
+}
+
+.search-input{
+    max-width: 196px;
+}
+
 .left-nav{
-    width: 15%;
     border-right: solid 1px darkgray;
     margin-top: -20px;
 }
