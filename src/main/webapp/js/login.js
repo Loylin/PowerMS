@@ -29,6 +29,8 @@ define("login", function (require, exports, module) {
             if (me.$account.val() == '' || me.$psw.val() == '') {
                 me.$error_tips.text("账号或密码不能为空！");
                 me.$error_tips.show();
+                me.$account.val("");
+                me.$psw.val("");
                 layer.msg("请输入账号或密码！", {time: 1000, icon: 5});
                 return false;
             } else {

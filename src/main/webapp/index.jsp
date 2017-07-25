@@ -43,7 +43,7 @@
             <div class="form-group">
                 <input type="password" class="form-control" id="psw" name="psw" placeholder="密码">
             </div>
-            <p class="text-danger" id="error-tips">111111</p>
+            <p class="text-danger" id="error-tips"></p>
             <button class="btn btn-info login-btn" id="btn-login">确定</button>
             <address><a href="#" class="forgetpsw"><p class="text-right">忘记密码</p></a></address>
         </form>
