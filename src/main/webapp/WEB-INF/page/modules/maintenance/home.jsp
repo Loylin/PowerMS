@@ -10,11 +10,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>电力维护平台</title>
-    <link href="../static/common/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/common/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="../css/modules/maintenance/home.css" type="text/css" rel="stylesheet">
-    <script src="../static/common/jquery/jquery-3.2.1.min.js"></script>
-    <script src="../static/common/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../static/common/layer/layer.js"></script>
+    <script src="../js/common/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../js/common/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/common/layer/layer.js"></script>
     <script src="../js/modules/maintenance/home.js"></script>
 </head>
 <body>

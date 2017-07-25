@@ -6,16 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<% String basePath = request.getScheme() + "://" + request.getServerName() + ":" +
+        request.getServerPort() + request.getContextPath();%>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>系统登录</title>
-    <link href="static/common/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/common/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/modules/maintenance/login.css" type="text/css" rel="stylesheet">
-    <script src="static/common/jquery/jquery-3.2.1.min.js"></script>
-    <script src="static/common/bootstrap/js/bootstrap.min.js"></script>
-    <script src="static/common/layer/layer.js"></script>
-    <script src="js/modules/maintenance/loglin.js"></script>
 </head>
 <body>
 
@@ -45,8 +43,8 @@
             <div class="form-group">
                 <input type="password" class="form-control" id="psw" name="psw" placeholder="密码">
             </div>
-            <p class="text-danger" id="errortips">账户或密码错误！请重新输入</p>
-            <button type="submit" class="btn btn-info login-btn" id="btn-login">确定</button>
+            <p class="text-danger" id="error-tips">111111</p>
+            <button class="btn btn-info login-btn" id="btn-login">确定</button>
             <address><a href="#" class="forgetpsw"><p class="text-right">忘记密码</p></a></address>
         </form>
     </div>
@@ -57,4 +55,22 @@
     </nav>
 </div>
 </body>
+<script src="<%=basePath%>/js/common/seajs/sea.js"></script>
+<script>
+    seajs.config({
+       base:"<%=basePath%>/js",
+        charset:"utf-8",
+        alias:{
+           'jquery':'common/jquery/jquery-3.2.1.min',
+            'layer':'common/layer/layer',
+            'bootstrap':'common/bootstrap/js/bootstrap.min'
+        },
+        preload:["jquery"]
+    });
+    seajs.use('./js/login', function (a) {
+        layer.config({
+            path:"<%=basePath%>/js/common/layer/"
+        });
+    });
+</script>
 </html>
